@@ -33,106 +33,18 @@
   <p class="hero-sub">Small studio. Big worlds. Every game built with passion and a total disregard for sleep schedules.</p>
 </section>
 
-<!-- FEATURED GAME -->
 <div class="section" id="games">
   <p class="section-label">// Featured</p>
   <h2 class="section-title">Latest Release</h2>
 
-  <div class="featured-card">
-    <div class="featured-banner">
-      <div class="game-art-placeholder">
-        <div class="art-grid"></div>
-        <div class="art-c1 art-circle"></div>
-        <div class="art-c2 art-circle"></div>
-        <div class="art-c3 art-circle"></div>
-      </div>
-      <div class="art-title-text">The<br>Cabin</div>
-      <div class="featured-badge">▶ New Release</div>
-    </div>
-    <div class="featured-info">
-      <div>
-        <div class="game-tags">
-          <span class="tag tag-purple">Horror</span>
-          <span class="tag tag-cyan">Survival</span>
-          <span class="tag tag-orange">Timed</span>
-        </div>
-        <h3 class="game-title">The Cabin</h3>
-        <p class="game-description">
-          Survive a mysterious monster in your cabin, try to stay warm and see daylight.
-        </p>
-        <div class="game-meta">
-          <div class="meta-item">
-            <label>Platform</label>
-            <span>Windows / Mac</span>
-          </div>
-          <div class="meta-item">
-            <label>Version</label>
-            <span>v0.9.2 Beta</span>
-          </div>
-          <div class="meta-item">
-            <label>Genre</label>
-            <span>Horror</span>
-          </div>
-          <div class="meta-item">
-            <label>Price</label>
-            <span style="color: #4ade80;">FREE</span>
-          </div>
-        </div>
-      </div>
-      <div>
-        <a href="https://drive.google.com/file/d/1f7B0Jsfx-ptIldr6J-xstcRSRqf7E3GB/view" target="_blank" class="btn-primary">
-          ⬇ Download on itch.io
-        </a>
-        <a href="#" onclick="openModal('TheCabin'); return false;" class="btn-secondary">
-          ◈ View Details
-        </a>
-      </div>
-    </div>
-  </div>
+  <div id="featured-container"></div>
 </div>
 
-<!-- GAME GRID -->
 <div class="section">
   <p class="section-label">// Library</p>
   <h2 class="section-title">All Games</h2>
 
-  <div class="game-grid">
-
-    <!-- Card 1 -->
-    <div class="game-card" onclick="openModal('The Cabin')">
-      <div class="card-banner banner-1">
-        <div class="card-art">🌌</div>
-        <div class="card-overlay"></div>
-        <span class="card-platform">Win / Mac</span>
-      </div>
-      <div class="card-body">
-        <div class="card-genre">Horror · Survival</div>
-        <div class="card-title">The Cabin</div>
-        <p class="card-desc">Horror survival. A monster hungers, every death is a lesson.</p>
-        <div class="card-footer">
-          <span class="card-price free">FREE</span>
-          <a href="https://drive.google.com/file/d/1f7B0Jsfx-ptIldr6J-xstcRSRqf7E3GB/view" target="_blank" class="card-btn" onclick="event.stopPropagation()">Download</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 4 — Add Your Own Slot -->
-    <div class="game-card" style="border-style: dashed; opacity: 0.5; cursor: default;">
-      <div class="card-banner" style="background: var(--bg3);">
-        <div class="card-art" style="font-size: 1.5rem; color: var(--muted);">＋</div>
-        <div class="card-overlay"></div>
-      </div>
-      <div class="card-body">
-        <div class="card-genre">Coming Soon</div>
-        <div class="card-title">Next Game</div>
-        <p class="card-desc">Something new is in development. Stay tuned.</p>
-        <div class="card-footer">
-          <span class="card-price" style="color: var(--muted);">TBA</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
+  <div class="game-grid" id="game-grid"></div>
 </div>
 
 <!-- ABOUT -->
