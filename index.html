@@ -4,15 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ahoy and Tsang</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
 <div class="grid-bg"></div>
 
+<!-- NAV -->
 <nav>
   <div class="logo">Ahoy<span>Tsang</span></div>
   <ul class="nav-links">
@@ -23,6 +22,7 @@
   <button class="nav-cta" onclick="window.open('https://ahoygames.itch.io','_blank')">View All</button>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-glow"></div>
   <p class="hero-eyebrow">// Independent Game Studio</p>
@@ -30,9 +30,10 @@
     HANDCRAFTED
     <span class="line2">INDIE GAMES</span>
   </h1>
-  <p class="hero-sub">Small studio. Big worlds.</p>
+  <p class="hero-sub">Small studio. Big worlds. Every game built with passion and a total disregard for sleep schedules.</p>
 </section>
 
+<!-- FEATURED GAME -->
 <div class="section" id="games">
   <p class="section-label">// Featured</p>
   <h2 class="section-title">Latest Release</h2>
@@ -48,7 +49,6 @@
       <div class="art-title-text">The<br>Cabin</div>
       <div class="featured-badge">▶ New Release</div>
     </div>
-
     <div class="featured-info">
       <div>
         <div class="game-tags">
@@ -56,18 +56,33 @@
           <span class="tag tag-cyan">Survival</span>
           <span class="tag tag-orange">Timed</span>
         </div>
-
         <h3 class="game-title">The Cabin</h3>
         <p class="game-description">
-          Survive a mysterious monster in your cabin.
+          Survive a mysterious monster in your cabin, try to stay warm and see daylight.
         </p>
+        <div class="game-meta">
+          <div class="meta-item">
+            <label>Platform</label>
+            <span>Windows / Mac</span>
+          </div>
+          <div class="meta-item">
+            <label>Version</label>
+            <span>v0.9.2 Beta</span>
+          </div>
+          <div class="meta-item">
+            <label>Genre</label>
+            <span>Horror</span>
+          </div>
+          <div class="meta-item">
+            <label>Price</label>
+            <span style="color: #4ade80;">FREE</span>
+          </div>
+        </div>
       </div>
-
       <div>
-        <a href="https://ahoygames.itch.io" target="_blank" class="btn-primary">
-          ⬇ Download
+        <a href="https://drive.google.com/file/d/1f7B0Jsfx-ptIldr6J-xstcRSRqf7E3GB/view" target="_blank" class="btn-primary">
+          ⬇ Download on itch.io
         </a>
-
         <a href="#" onclick="openModal('TheCabin'); return false;" class="btn-secondary">
           ◈ View Details
         </a>
@@ -76,22 +91,112 @@
   </div>
 </div>
 
+<!-- GAME GRID -->
+<div class="section">
+  <p class="section-label">// Library</p>
+  <h2 class="section-title">All Games</h2>
+
+  <div class="game-grid">
+
+    <!-- Card 1 -->
+    <div class="game-card" onclick="openModal('The Cabin')">
+      <div class="card-banner banner-1">
+        <div class="card-art">🌌</div>
+        <div class="card-overlay"></div>
+        <span class="card-platform">Win / Mac</span>
+      </div>
+      <div class="card-body">
+        <div class="card-genre">Horror · Survival</div>
+        <div class="card-title">The Cabin</div>
+        <p class="card-desc">Horror survival. A monster hungers, every death is a lesson.</p>
+        <div class="card-footer">
+          <span class="card-price free">FREE</span>
+          <a href="https://drive.google.com/file/d/1f7B0Jsfx-ptIldr6J-xstcRSRqf7E3GB/view" target="_blank" class="card-btn" onclick="event.stopPropagation()">Download</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 — Add Your Own Slot -->
+    <div class="game-card" style="border-style: dashed; opacity: 0.5; cursor: default;">
+      <div class="card-banner" style="background: var(--bg3);">
+        <div class="card-art" style="font-size: 1.5rem; color: var(--muted);">＋</div>
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-genre">Coming Soon</div>
+        <div class="card-title">Next Game</div>
+        <p class="card-desc">Something new is in development. Stay tuned.</p>
+        <div class="card-footer">
+          <span class="card-price" style="color: var(--muted);">TBA</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="about-strip" id="about">
+  <div class="about-inner">
+    <div class="about-text">
+      <p class="section-label">// About</p>
+      <h2>Duo dev.<br>Full chaos.</h2>
+      <p>
+        Ahoy and Tsang is a two-person indie studio making games that I'd want to play. No publishers, no deadlines dictated by investors — just raw creativity and some music help from a chud.<br><br>
+        All games are available for free on itch.io. If you enjoy them, wishlisting, sharing, and leaving a comment means the world.
+      </p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-box">
+        <span class="stat-num">1</span>
+        <span class="stat-label">Games Released</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">2</span>
+        <span class="stat-label">Developer</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">∞</span>
+        <span class="stat-label">Cups of Coffee</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">0</span>
+        <span class="stat-label">Normal Sleep Hours</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
 <footer>
   <div class="footer-logo">AhoyTsang</div>
+  <ul class="footer-links">
+    <li><a href="https://ahoygames.itch.io" target="_blank">itch.io</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
   <span class="footer-copy">© 2026 AhoyTsang</span>
 </footer>
 
+<!-- MODAL -->
 <div class="modal-overlay" id="modal" onclick="closeModal(event)">
-  <div class="modal">
+  <div class="modal" id="modal-content">
     <button class="modal-close" onclick="closeModal()">✕</button>
     <div class="modal-banner" id="modal-banner"></div>
     <div class="modal-body">
-      <div id="modal-title"></div>
-      <p id="modal-desc"></p>
+      <div id="modal-tags" class="game-tags" style="margin-bottom:12px;"></div>
+      <div class="modal-title" id="modal-title"></div>
+      <div class="modal-genre" id="modal-genre"></div>
+      <p class="modal-description" id="modal-desc"></p>
+      <div id="modal-meta" class="game-meta" style="margin-bottom:28px;"></div>
+      <div class="modal-actions">
+        <a id="modal-dl-btn" href="https://ahoygames.itch.io" target="_blank" class="btn-primary">⬇ Download on itch.io</a>
+        <button class="btn-secondary" onclick="closeModal()">← Back</button>
+      </div>
     </div>
   </div>
 </div>
 
 <script src="index.js"></script>
+
 </body>
 </html>
