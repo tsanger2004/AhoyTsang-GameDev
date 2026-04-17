@@ -6,26 +6,16 @@
 <title>Ahoy and Tsang</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
 
 <div class="grid-bg"></div>
 
-<!-- NAV -->
-<nav>
-  <div class="logo">Ahoy<span>Tsang</span></div>
-  <ul class="nav-links">
-    <li><a href="#games">Games</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="https://ahoygames.itch.io" target="_blank">itch.io</a></li>
-  </ul>
-  <button class="nav-cta" onclick="window.open('https://ahoygames.itch.io','_blank')">View All</button>
-</nav>
-
 <!-- HERO -->
 <section class="hero">
   <div class="hero-glow"></div>
-  <p class="hero-eyebrow">// Independent Game Studio</p>
+  <p class="hero-eyebrow">Independent Game Studio</p>
   <h1>
     HANDCRAFTED
     <span class="line2">INDIE GAMES</span>
@@ -54,8 +44,8 @@
       <p class="section-label">// About</p>
       <h2>Duo dev.<br>Full chaos.</h2>
       <p>
-        Ahoy and Tsang is a two-person indie studio making games that I'd want to play. No publishers, no deadlines dictated by investors — just raw creativity and some music help from a chud.<br><br>
-        All games are available for free on itch.io. If you enjoy them, wishlisting, sharing, and leaving a comment means the world.
+        Ahoy and Tsang is a two-person indie studio making games that we want to play. Just raw creativity and some music help from our friend.<br><br>
+        All games are available for free on itch.io or paid on steam (eventually). If you enjoy them, wishlisting, sharing, and leaving a comment means the world and helps us keep making more.
       </p>
     </div>
     <div class="stats-grid">
@@ -65,7 +55,7 @@
       </div>
       <div class="stat-box">
         <span class="stat-num">2</span>
-        <span class="stat-label">Developer</span>
+        <span class="stat-label">Developers</span>
       </div>
       <div class="stat-box">
         <span class="stat-num">∞</span>
@@ -101,7 +91,9 @@
       <p class="modal-description" id="modal-desc"></p>
       <div id="modal-meta" class="game-meta" style="margin-bottom:28px;"></div>
       <div class="modal-actions">
-        <a id="modal-dl-btn" href="https://ahoygames.itch.io" target="_blank" class="btn-primary">⬇ Download on itch.io</a>
+        <a id="modal-dl-btn" href="#" class="btn-primary">
+          View Game Page
+        </a>
         <button class="btn-secondary" onclick="closeModal()">← Back</button>
       </div>
     </div>
@@ -109,6 +101,7 @@
 </div>
 
 <script src="index.js"></script>
+<script src="nav.js"></script>
 
 </body>
 </html>

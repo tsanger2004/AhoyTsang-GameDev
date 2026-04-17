@@ -10,7 +10,7 @@ const games = {
       { name: "Timed", color: "orange" }
     ],
     platform: "Windows",
-    version: "v0.9.2 Beta",
+    version: "v1.1.0",
     price: "FREE",
     download: "https://drive.google.com/file/d/1f7B0Jsfx-ptIldr6J-xstcRSRqf7E3GB/view",
     emoji: "🌌",
@@ -106,6 +106,7 @@ function openModal(id) {
   if (!g) return;
 
   const modal = document.getElementById("modal");
+  document.getElementById("modal-dl-btn").href = `game.html?id=${id}`;
 
   document.getElementById("modal-banner").style.background = g.bannerBg;
   document.getElementById("modal-banner").innerHTML =
